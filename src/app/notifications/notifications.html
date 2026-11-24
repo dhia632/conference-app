@@ -1,0 +1,17 @@
+<section class="card orange" id="notifications">
+  <div class="icon" aria-hidden="true">🔔</div>
+  <div class="content">
+    <h2>Zone de notifications</h2>
+    <p>Vous avez {{ count() }} nouvelles notifications.</p>
+    <button type="button" (click)="toggle()">
+      {{ visible() ? 'Masquer' : 'Afficher' }} les notifications
+    </button>
+    @if (visible()) {
+      <ul>
+        @for (n of items(); track n) {
+          <li>{{ n }}</li>
+        }
+      </ul>
+    }
+  </div>
+</section>

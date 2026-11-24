@@ -1,0 +1,2 @@
+.inputs { display: flex; flex-wrap: wrap; margin-bottom: 14px; }
+.inputs input { padding: 3px 4px; border: 1px solid #767676; width: 200px; }

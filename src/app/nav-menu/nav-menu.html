@@ -1,0 +1,11 @@
+<nav class="menu" aria-label="Navigation principale">
+  @for (item of items(); track item.label) {
+    <a
+      [routerLink]="item.path"
+      [fragment]="item.fragment"
+      [routerLinkActive]="item.fragment ? '' : 'active'"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >{{ item.label }}</a
+    >
+  }
+</nav>
